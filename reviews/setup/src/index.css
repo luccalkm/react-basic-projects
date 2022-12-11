@@ -146,7 +146,7 @@ main {
 }
 .title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .underline {
   height: 0.25rem;
@@ -156,8 +156,9 @@ main {
   margin-right: auto;
 }
 .container {
-  width: 80vw;
+  width: 100vw;
   max-width: var(--fixed-width);
+  margin: 0 auto;
 }
 .review {
   background: var(--clr-white);
@@ -220,14 +221,15 @@ main {
 }
 .info {
   margin-bottom: 0.75rem;
+  text-align: left;
 }
 .prev-btn,
 .next-btn {
   color: var(--clr-primary-7);
-  font-size: 1.25rem;
+  font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
   transition: var(--transition);
   cursor: pointer;
 }
@@ -236,7 +238,7 @@ main {
   color: var(--clr-primary-5);
 }
 .random-btn {
-  margin-top: 0.5rem;
+  font-size: 1.25rem;
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
   padding: 0.25rem 0.5rem;
