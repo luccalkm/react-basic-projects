@@ -6,7 +6,14 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(count)
+    let amount = parseInt(count)
+    if (count <= 0) {
+      amount = 1
+    }
+    if (amount > 8) {
+      amount = 8
+    }
+    setText(data.slice(0, amount))
   }
 
   return (
@@ -27,9 +34,32 @@ function App() {
           Generate
         </button>
       </form>
-      <article>
-        {text.map((paragraph) => {
-          return <p>{paragraph}</p>
+      <article style={{ width: '100%', position: 'relative' }}>
+        {text.map((paragraph, index) => {
+          return (
+            <>
+              <h3
+                style={{
+                  position: 'absolute',
+                  left: '-100px',
+                }}
+              >
+                {index + 1}
+              </h3>
+
+              <p>
+                {paragraph}
+                <div
+                  style={{
+                    background: 'black',
+                    margin: '40px auto',
+                    width: '400px',
+                    height: '2px',
+                  }}
+                ></div>
+              </p>
+            </>
+          )
         })}
       </article>
     </section>
