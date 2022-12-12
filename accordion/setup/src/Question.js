@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import './index.css'
+
 const Question = ({ data }) => {
   const [show, setShow] = useState(false)
 
@@ -17,7 +19,8 @@ const Question = ({ data }) => {
           {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
-      {show ? <p>{info}</p> : <p></p>}
+      {/* Optimization */}
+      {show && <p>{info}</p>}
     </div>
   )
 }
