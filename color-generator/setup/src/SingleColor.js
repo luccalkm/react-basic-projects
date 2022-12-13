@@ -12,6 +12,9 @@ const SingleColor = ({ rgb, weight, index }) => {
       onClick={(e) => {
         setAlert(true)
         navigator.clipboard.writeText(hex)
+        setTimeout(() => {
+          setAlert(false)
+        }, 2000)
       }}
       className={`color ${index > 10 && 'color-light'}`}
       style={{
@@ -20,7 +23,11 @@ const SingleColor = ({ rgb, weight, index }) => {
     >
       <p className='percent-value'>{weight}%</p>
       <p className='color-value'>{hex}</p>
-      {alert && <p className='alert'>Copied to clipboard!</p>}
+      {alert && (
+        <p className={`alert ${index > 10 ? 'color-light' : 'color-dark'}`}>
+          Copied to clipboard!
+        </p>
+      )}
     </article>
   )
 }

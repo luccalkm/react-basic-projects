@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SingleColor from './SingleColor'
 
 import Values from 'values.js'
@@ -7,6 +7,10 @@ function App() {
   const [color, setColor] = useState('')
   const [error, setError] = useState(false)
   const [list, setList] = useState([])
+
+  const generateRandomColor = () => {
+    setColor('#' + Math.random().toString(16).substr(-6))
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -27,7 +31,7 @@ function App() {
     <>
       <section className='container'>
         <h3>Color Generator</h3>
-        <form onSubmit={handleSubmit}>
+        <form style={{ display: 'flex' }} onSubmit={handleSubmit}>
           <input
             type='text'
             value={color}
@@ -36,9 +40,30 @@ function App() {
             }}
             placeholder='#f15025'
           />
-          <button type='submit' className='btn'>
-            Submit
-          </button>
+          <div
+            style={{ width: '300px', margin: '0px 20px' }}
+            className='button-div'
+          >
+            <button
+              style={{ marginRight: '20px' }}
+              type='submit'
+              className='btn'
+            >
+              Submit
+            </button>
+            <button
+              type='submit'
+              style={{
+                background: 'transparent',
+                color: `black`,
+                border: `2px solid ${color}`,
+              }}
+              className='btn'
+              onClick={generateRandomColor}
+            >
+              Random Color
+            </button>
+          </div>
         </form>
         {error && (
           <h3
