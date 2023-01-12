@@ -46,7 +46,6 @@ function App() {
               >
                 {index + 1}
               </h3>
-
               <p>
                 {paragraph}
                 <div

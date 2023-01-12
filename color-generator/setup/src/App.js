@@ -80,7 +80,6 @@ function App() {
           </h3>
         )}
       </section>
-
       <section className='colors'>
         {list.map((color, index) => {
           return <SingleColor key={index} index={index} {...color} />
