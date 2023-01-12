@@ -2,7 +2,7 @@
 
 ### Projetos desenvolvidos em materiais fornecidos através do curso do John Smilga na Udemy.
 
-> Meu objetivo é aprender o máximo de React (com maestria) durante determinado período de tempo.
+> Meu objetivo é aprender o máximo de React.
 
 ## Progresso
 
