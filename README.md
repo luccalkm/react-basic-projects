@@ -1,4 +1,4 @@
-# React Projects (13/23)
+# React Projects (15/23)
 
 ### Projetos desenvolvidos em materiais fornecidos através do curso do John Smilga na Udemy.
 
@@ -6,7 +6,7 @@
 
 ## Progresso
 
-![](https://geps.dev/progress/56)
+![](https://geps.dev/progress/65)
 
 ## \o/
 
