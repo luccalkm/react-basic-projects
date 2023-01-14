@@ -1,9 +1,10 @@
 # React Projects (15/23)
 
 ### Projetos desenvolvidos em materiais fornecidos através do curso do John Smilga na Udemy.
-### Não pretendo subir todos, só os que talvez eu faça deploy! =)
 
 > Meu objetivo é aprender o máximo de React.
+> 
+> **OBS:** Não pretendo subir todos, só os que talvez eu faça deploy! =)
 
 ## Progresso
 
