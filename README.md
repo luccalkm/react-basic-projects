@@ -8,6 +8,11 @@
 
 ![](https://geps.dev/progress/65)
 
+## Projetos favoritos (TOP 3)
+1. [Submenu](https://submenu-stripe-react.netlify.app/);  
+2. [Cart](https://phone-cart-react.netlify.app/)
+3. [Color Code](https://color-code-react.netlify.app/)
+
 ## \o/
 
 ```javascript
