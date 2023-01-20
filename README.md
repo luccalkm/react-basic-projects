@@ -1,4 +1,4 @@
-# React Projects (15/23)
+# React Projects
 
 ### Projetos desenvolvidos em materiais fornecidos através do curso do John Smilga na Udemy.
 
@@ -8,7 +8,7 @@
 
 ## Progresso
 
-![](https://geps.dev/progress/65)
+![](https://geps.dev/progress/98)
 
 ## Projetos favoritos (TOP 3)
 1. [Submenu](https://submenu-stripe-react.netlify.app/)
